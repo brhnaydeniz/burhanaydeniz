@@ -30,143 +30,161 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-.page_title {
-    padding: 30px 0px;
-}
-.page_title h1 {
-    color: #c0392b;
-    font-weight: 700;
-    line-height: 2;
-    margin-bottom: 0;
-    position: relative;
-    text-transform: capitalize;
-}
-.page_title h1::before {
-    background: #c0392b;
-    width: 70px;
-    height: 2px;
-    position: absolute;
-    content: '';
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.page_title h1::after {
-    position: absolute;
-    content: '';
-    background: #fbc531;
-    width: 30px;
-    height: 2px;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/*Menu starts*/
-.menu_tab {
-    margin: 0 auto;
-    justify-content: center;
-}
-.nav-item {
-    display: inline-block;
-    text-align: center;
-}
-.nav-tabs .nav-link{
-    transition: .3s;
-}
-.nav-tabs .nav-link.active {
-    background: #c0392b;
-    color: #fff;
-    font-weight: 700;
-    border: 1px solid #c0392b;
-    text-transform: capitalize;
-}
-.nav-link {
-    color: #000;
-}
-.nav-tabs .nav-link:hover {
-    background: #c0392b;
-    color: #fff;
-    border: 1px solid #c0392b;
-}
-.single_menu {
-    position: relative;
-    margin-bottom: 75px;
-    transition: .3s;
-}
-.single_menu:hover img{
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        .page_title {
+            padding: 30px 0px;
+        }
 
-}
-.single_menu img {
-    width: 33%;
-    position: absolute;
-    height: 140px;
-    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    transition: .3s;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-.menu_content {
-    padding-left: 200px;
-}
-.menu_content h4 {
-    font-size: 25px;
-    font-weight: 300;
-    border-bottom: 1px dashed #c0392b;
-    line-height: 2;
-    text-transform: capitalize;
-}
-.menu_content h4 span {
-    font-size: 25px;
-    font-weight: 800;
-    float: right;
-    font-style: italic;
-    color: #c0392b;
-}
-.menu_content p {
-    font-weight: 200;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-.menu_btn.btn.btn-danger {
-    margin: 0 auto;
-    display: block;
-    width: 140px;
-}
-/*Menu ends*/
-.menu_btn.btn.btn-danger {
-	margin: 0 auto;
-	display: block;
-	width: 140px;
-}
-.btn.btn-danger {
-	background: #c0392b;
-	border: 1px solid #c0392b;
-	transition: .3s;
-	position: relative;
-	z-index: 1;
-	text-transform: capitalize;
-	font-weight: 700;
-	overflow: hidden;
-	padding: 15px 25px;
-}
-.btn.btn-danger::before {
-	position: absolute;
-	content: '';
-	background: #e74c3c;
-	width: 100%;
-	height: 100%;
-	left: -100%;
-	top: 100%;
-	transition: .3s;
-	z-index: -1;
-}
-.btn.btn-danger:hover:before{
-    top: 0;
-    left: 0;
-}
+            .page_title h1 {
+                color: #c0392b;
+                font-weight: 700;
+                line-height: 2;
+                margin-bottom: 0;
+                position: relative;
+                text-transform: capitalize;
+            }
+
+                .page_title h1::before {
+                    background: #c0392b;
+                    width: 70px;
+                    height: 2px;
+                    position: absolute;
+                    content: '';
+                    top: 90%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .page_title h1::after {
+                    position: absolute;
+                    content: '';
+                    background: #fbc531;
+                    width: 30px;
+                    height: 2px;
+                    top: 90%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+        /*Menu starts*/
+        .menu_tab {
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .nav-item {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .nav-tabs .nav-link {
+            transition: .3s;
+        }
+
+            .nav-tabs .nav-link.active {
+                background: #c0392b;
+                color: #fff;
+                font-weight: 700;
+                border: 1px solid #c0392b;
+                text-transform: capitalize;
+            }
+
+        .nav-link {
+            color: #000;
+        }
+
+        .nav-tabs .nav-link:hover {
+            background: #c0392b;
+            color: #fff;
+            border: 1px solid #c0392b;
+        }
+
+        .single_menu {
+            position: relative;
+            margin-bottom: 75px;
+            transition: .3s;
+        }
+
+            .single_menu:hover img {
+                -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+                clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+            }
+
+            .single_menu img {
+                width: 33%;
+                position: absolute;
+                height: 140px;
+                -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+                transition: .3s;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+        .menu_content {
+            padding-left: 230px;
+        }
+
+            .menu_content h4 {
+                font-size: 25px;
+                font-weight: 300;
+                border-bottom: 1px dashed #c0392b;
+                line-height: 2;
+                text-transform: capitalize;
+            }
+
+                .menu_content h4 span {
+                    font-size: 25px;
+                    font-weight: 800;
+                    float: right;
+                    font-style: italic;
+                    color: #c0392b;
+                }
+
+            .menu_content p {
+                font-weight: 200;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+        .menu_btn.btn.btn-danger {
+            margin: 0 auto;
+            display: block;
+            width: 140px;
+        }
+        /*Menu ends*/
+        .menu_btn.btn.btn-danger {
+            margin: 0 auto;
+            display: block;
+            width: 140px;
+        }
+
+        .btn.btn-danger {
+            background: #c0392b;
+            border: 1px solid #c0392b;
+            transition: .3s;
+            position: relative;
+            z-index: 1;
+            text-transform: capitalize;
+            font-weight: 700;
+            overflow: hidden;
+            padding: 15px 25px;
+        }
+
+            .btn.btn-danger::before {
+                position: absolute;
+                content: '';
+                background: #e74c3c;
+                width: 100%;
+                height: 100%;
+                left: -100%;
+                top: 100%;
+                transition: .3s;
+                z-index: -1;
+            }
+
+            .btn.btn-danger:hover:before {
+                top: 0;
+                left: 0;
+            }
     </style>
 </head>
 
@@ -176,104 +194,440 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
         <div class="spinner"></div>
     </div>
 
-
     <section id="our_menu" class="pt-5 pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page_title text-center mb-4">
-                    <h1>Our Menu</h1>
-                    <div class="single_line"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab">Breakfast</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Lunch</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Dinner</a>
-                </li>
-            </ul>
-        </div>
-        <div class="row">
-            <div class="tab-content col-lg-12" id="myTabContent">
-                <!-- Breakfast Tab -->
-                <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_menu">
-                                <img src="https://i.imgur.com/kbpceNv.jpg" alt="tavuk tava">
-                                <div class="menu_content">
-                                    <h4>Tavuk Tava <span>$24</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <div class="single_menu">
-                                <img src="https://i.imgur.com/lYKUORL.jpg" alt="kirmizi et">
-                                <div class="menu_content">
-                                    <h4>Kırmızı Et <span>$30</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <div class="single_menu">
-                                <img src="https://i.imgur.com/AXAHrf6.jpg" alt="makarna">
-                                <div class="menu_content">
-                                    <h4>Makarna <span>$18</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <div class="single_menu">
-                                <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="wrap">
-                                <div class="menu_content">
-                                    <h4>Wrap <span>$15</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="single_menu">
-                                <img src="https://i.imgur.com/TAq7lDR.jpg" alt="salata">
-                                <div class="menu_content">
-                                    <h4>Salata <span>$12</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <div class="single_menu">
-                                <img src="https://i.imgur.com/lYKUORL.jpg" alt="salata">
-                                <div class="menu_content">
-                                    <h4>Aperatif <span>$10</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <!-- Diğer menü öğelerini buraya ekleyebilirsiniz -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Lunch Tab -->
-                <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
-                    <div class="row">
-                        <!-- Lunch menüsünü buraya ekleyebilirsiniz -->
-                    </div>
-                </div>
-                <!-- Dinner Tab -->
-                <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
-                    <div class="row">
-                        <!-- Dinner menüsünü buraya ekleyebilirsiniz -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page_title text-center mb-4">
+                        <h1>Cihanbeyli Tavuk Dünyası</h1>
+                        <div class="single_line"></div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="menu_btn btn btn-danger">View More</a>
+            <div class="row">
+                <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tavayemekleri-tab" data-toggle="tab" href="#tavayemekleri" role="tab">Tava Yemekleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="kirmiziet-tab" data-toggle="tab" href="#kirmiziet" role="tab">Kırmızı Et</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="burger-tab" data-toggle="tab" href="#burger" role="tab">Burger</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="makarna-tab" data-toggle="tab" href="#makarna" role="tab">Makarna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="wrap-tab" data-toggle="tab" href="#wrap" role="tab">Wrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="salata-tab" data-toggle="tab" href="#salata" role="tab">Salatalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="aperitif-tab" data-toggle="tab" href="#aperitif" role="tab">Aperitifler</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="tab-content col-lg-12" id="myTabContent">
+                    <!-- Tava Yemekleri Tab -->
+                    <div class="tab-pane fade show active" id="tavayemekleri" role="tabpanel" aria-labelledby="tavayemekleri-tab">
+                        <h3>Tavuk Yemekleri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="meksika soslu tavuk">
+                                    <div class="menu_content">
+                                        <h4>Meksika Soslu Tavuk <span>₺200</span></h4>
+                                        <p>Tavuk - Kapya Biber - Köy Biberi - Meksika Sosu</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="Barbekü Soslu Tavuk">
+                                    <div class="menu_content">
+                                        <h4>Barbekü Soslu Tavuk <span>₺200</span></h4>
+                                        <p>Tavuk - Kapya Biber - Köy Biberi - Barbekü Sosu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="Köri Soslu Tavuk">
+                                    <div class="menu_content">
+                                        <h4>Köri Soslu Tavuk <span>₺200</span></h4>
+                                        <p>Tavuk - Mantar - Krema - Köri Sosu</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="Kremalı Mantarlı Tavuk">
+                                    <div class="menu_content">
+                                        <h4>Kremalı Mantarlı Tavuk<span>₺200</span></h4>
+                                        <p>Tavuk - Krema - Mantar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="Dağ Kekikli Mantar">
+                                    <div class="menu_content">
+                                        <h4>Dağ Kekikli Tavuk <span>₺200</span></h4>
+                                        <p>Tavuk - Kaşar - Krema - Dağ Kekiği</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="Chicken Fajita">
+                                    <div class="menu_content">
+                                        <h4>Chicken Fajita<span>₺200</span></h4>
+                                        <p>Tavuk - Kapya Biber - Köy Biberi - Fajita</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="Karışık Soslu Tavuk">
+                                    <div class="menu_content">
+                                        <h4>Karışık Soslu Tavuk<span>₺200</span></h4>
+                                        <p>Tavuk - Kapya Biber - Köy Biberi - Karışık Sos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="Kajun Baharatlı Tavuk">
+                                    <div class="menu_content">
+                                        <h4>Kajun Baharatlı Tavuk<span>₺200</span></h4>
+                                        <p>Tavuk - Kapya Biber - Köy Biberi - Kajun Baharatı</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="Soya Soslu Tavuk">
+                                    <div class="menu_content">
+                                        <h4>Soya Soslu Tavuk<span>₺200</span></h4>
+                                        <p>Tavuk - Kapya Biber - Köy Biberi - Soya Sosu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kırmızı Et Tab -->
+                    <div class="tab-pane fade" id="kirmiziet" role="tabpanel" aria-labelledby="kirmiziet-tab">
+                        <h3>Kırmızı Et Kategorisi</h3>
+                        <!-- Kırmızı Et menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="şefin tavası">
+                                    <div class="menu_content">
+                                        <h4>Şefin Tavası <span>₺240</span></h4>
+                                        <p>Et - Kapya Biber - Köy Biberi - Çeri Domates - Arpacık Soğan - Sos</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="Fajita beef">
+                                    <div class="menu_content">
+                                        <h4> Fajita Beef <span>₺240</span></h4>
+                                        <p>Et - Kapya Biber - Köy Biberi - Soğan - Sos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="Steak Et">
+                                    <div class="menu_content">
+                                        <h4>Steak Tava <span>₺280</span></h4>
+                                        <p>Et Izgara - Patates Püresi - Turşu</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="Biftek">
+                                    <div class="menu_content">
+                                        <h4>Biftek<span>₺280</span></h4>
+                                        <p>Et - Brokoli - Çeri Domates - Arpacık Soğan - Sos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="Sac Kavurma">
+                                    <div class="menu_content">
+                                        <h4>Sac Kavurma<span>₺240</span></h4>
+                                        <p>Et - Soğan - Köy Biberi - Domates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Burger Tab -->
+                    <div class="tab-pane fade" id="burger" role="tabpanel" aria-labelledby="burger-tab">
+                        <h3>Burger Kategorisi</h3>
+                        <!-- Burger menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="Şef Double Burger">
+                                    <div class="menu_content">
+                                        <h4>Şef Double Burger<span>₺260</span></h4>
+                                        <p>Köfte - Domates - Marul - Soğan - Turşu</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="meksika burger">
+                                    <div class="menu_content">
+                                        <h4> Meksika Burger<span>₺200</span></h4>
+                                        <p>Köfte - Domates - Marul - Turşu - Meksika Sosu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="barbekü burger">
+                                    <div class="menu_content">
+                                        <h4>Barbekü Burger <span>₺200</span></h4>
+                                        <p>Köfte - Domates - Marul - Turşu - Barbekü Sosu</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="cheeseburger">
+                                    <div class="menu_content">
+                                        <h4>Cheeseburger<span>₺200</span></h4>
+                                        <p>Köfte - Domates - Marul - Turşu - Cheddar Peyniri </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/TAq7lDR.jpg" alt="mantarlı burger">
+                                    <div class="menu_content">
+                                        <h4>Mantarlı Burger<span>₺200</span></h4>
+                                        <p>Köfte - Domates - Marul - Turşu - Mantar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Makarna Tab-->
+                    <div class="tab-pane fade" id="makarna" role="tabpanel" aria-labelledby="makarna-tab">
+                        <h3>Makarna Kategorisi</h3>
+                        <!-- Makarna menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="Penne Con Pollo">
+                                    <div class="menu_content">
+                                        <h4>Penne Con Pollo<span>₺170</span></h4>
+                                        <p>Penne Makarna - Tavuk - Sos</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="Penne Arabiata">
+                                    <div class="menu_content">
+                                        <h4> Penne Arabiata<span>₺170</span></h4>
+                                        <p>Penne Makarna - Kıyma - Sos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="fettuccine">
+                                    <div class="menu_content">
+                                        <h4>Fetttuccine <span>₺200</span></h4>
+                                        <p>Penne Makarna - Mantar - Sos</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="Ton Balıklı Makarna">
+                                    <div class="menu_content">
+                                        <h4>Ton Balıklı Makarnas<span>₺200</span></h4>
+                                        <p>Penne Makarna - Ton Balığı - Yeşillik </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Wrap Tab-->
+                    <div class="tab-pane fade" id="wrap" role="tabpanel" aria-labelledby="wrap-tab">
+                        <h3>Makarna Kategorisi</h3>
+                        <!-- Wrap menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="etli wrap">
+                                    <div class="menu_content">
+                                        <h4>Etli Wrap<span>₺240</span></h4>
+                                        <p>Et - Köy Biberi - Kapya Biberi - Kaşar - Sos</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="köfte Wrap">
+                                    <div class="menu_content">
+                                        <h4> Köfte Wrap<span>₺240</span></h4>
+                                        <p>Köfte - Köy Biberi - Kapya Biberi - Kaşar - Sos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="Barbekü Wrap">
+                                    <div class="menu_content">
+                                        <h4>Barbekü Wrap <span>₺200</span></h4>
+                                        <p>Tavuk - Köy Biberi - Kapya Biberi - Kaşar - Barbekü Sosu</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="Chilli Wraps">
+                                    <div class="menu_content">
+                                        <h4>Chilli Wraps<span>₺200</span></h4>
+                                        <p>Tavuk - Köy Biberi - Kapya Biberi - Kaşar - Chilli Sos </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="Meksika Wrap">
+                                    <div class="menu_content">
+                                        <h4>Meksika Wrap <span>₺200</span></h4>
+                                        <p>Tavuk - Köy Biberi - Kapya Biberi - Kaşar - Meksika Sosu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Salata Tab-->
+                    <div class="tab-pane fade" id="salata" role="tabpanel" aria-labelledby="salata-tab">
+                        <h3>Makarna Kategorisi</h3>
+                        <!-- Salata menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="tavuklu salata">
+                                    <div class="menu_content">
+                                        <h4>Tavuklu Salata<span>₺140</span></h4>
+                                        <p>Tavuk - Yeşillik - Domates - Salatalık - Mısır - Turşu - Zeytin</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="Ton Balıklı Salata">
+                                    <div class="menu_content">
+                                        <h4> Ton Balığı Salata<span>₺140</span></h4>
+                                        <p>Ton Balığı - Yeşillik - Domates - Salatalık - Mısır - Turşu - Zeytin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="peynirli salata">
+                                    <div class="menu_content">
+                                        <h4>Peynirli Salata <span>₺140</span></h4>
+                                        <p>Beyaz Peynir - Yeşillik - Mısır - Turşu - Zeytin - Salatalık</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Aperitifler Tab-->
+                    <div class="tab-pane fade" id="aperitif" role="tabpanel" aria-labelledby="aperitif-tab">
+                        <h3>Makarna Kategorisi</h3>
+                        <!-- Salata menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/kbpceNv.jpg" alt="Kajun Baharatı">
+                                    <div class="menu_content">
+                                        <h4>Kajun Baharatlı Tavuk<span>₺75</span></h4>
+                                        <p>Kajun Baharatı - Tavuk - Patates Kızartması</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/YkDi8Nb.jpg" alt="Karışık Sıcak Tabak">
+                                    <div class="menu_content">
+                                        <h4> Karışık Sıcak Tabak<span>₺140</span></h4>
+                                        <p>Nugget - Patates Kızartması - Soğan Halkası - Sosis - Kroket - Sigara Böreği</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/lYKUORL.jpg" alt="elma dilim patates">
+                                    <div class="menu_content">
+                                        <h4>Elma Dilim Patates <span>₺75</span></h4>
+                                        <p><br /></p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="sigara böreği">
+                                    <div class="menu_content">
+                                        <h4>Sigara Böreği (Porsiyon)<span>₺75</span></h4>
+                                        <p><br /></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="Soğan Halkası">
+                                    <div class="menu_content">
+                                        <h4>Soğan Halkası (Porsiyon)<span>₺75</span></h4>
+                                        <p><br /></p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="https://i.imgur.com/AXAHrf6.jpg" alt="Sosis Tava">
+                                    <div class="menu_content">
+                                        <h4>Sosis Tava (Porsiyon)<span>₺75</span></h4>
+                                        <p><br /></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-      
-  <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+
+    <!-- Bootstrap ve JS Bağlantıları -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -335,10 +689,12 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Burhan Aydeniz</a>. Tüm Hakları Saklıdır.
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						Designed by Burhan Aydeniz</p>
+                        <p class="mb-0">
+                            &copy; <a class="text-white border-bottom" href="#">Burhan Aydeniz</a>. Tüm Hakları Saklıdır.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed by Burhan Aydeniz
+                        </p>
 
                     </div>
                 </div>
@@ -346,10 +702,22 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
         </div>
     </div>
     <!-- Footer End -->
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script>
+
+        // Menüden tıklanan kategoriye kaydırma işlemi
+        document.querySelectorAll('.menu_tab .nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Hedef kategoriye kaydır
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 
 
     <!-- JavaScript Libraries -->
@@ -360,9 +728,31 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Tab tıklama olayını dinle
+            $('a[data-toggle="tab"]').on('click', function (e) {
+                // Tıklanan tab'ın id'sini al
+                var targetTab = $(this).attr('href');
+
+                // Aktif olan tab'ı değiştir
+                $(targetTab).addClass('show active');
+
+                // Diğer tab'ları pasif yap
+                $('.tab-pane').not(targetTab).removeClass('show active');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
