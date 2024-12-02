@@ -481,13 +481,13 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Adınız ve Soyadınız" style="height: 55px;">
+                                    <input type="text" id="name" name="name" class="form-control bg-light border-0" placeholder="Adınız ve Soyadınız" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Mail Adresiniz" style="height: 55px;">
+                                    <input type="email" id="mail" name="mail" class="form-control bg-light border-0" placeholder="Mail Adresiniz" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
                                     <select class="form-select bg-light border-0" style="height: 55px;">
@@ -500,7 +500,7 @@
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Mesajınız"></textarea>
+                                    <textarea id="message" name="message" class="form-control bg-light border-0" rows="3" placeholder="Mesajınız"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-dark w-100 py-3" type="submit">Fiyat Teklifi Al</button>
@@ -657,7 +657,26 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Formun sayfayı yeniden yüklemesini engeller
 
+            // Formdan verileri al
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const mail = document.getElementById('mail').value;
+
+            // WhatsApp URL'si için mesaj metnini oluştur
+            const formattedMessage = `Merhaba ben ${name}, ${message}. Mail adresim: ${mail}`;
+
+            // WhatsApp API linkini oluştur
+            const whatsappLink = `https://wa.me/+905455893411?text=${encodeURIComponent(formattedMessage)}`;
+
+            // Kullanıcıyı WhatsApp ile yönlendir
+            window.open(whatsappLink, '_blank');
+        });
+
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
