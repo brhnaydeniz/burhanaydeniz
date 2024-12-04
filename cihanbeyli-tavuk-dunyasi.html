@@ -206,7 +206,9 @@
             </div>
             <div class="row">
                 <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
-                     
+                     <li class="nav-item">
+                        <a class="nav-link active" id="ogrencimenu-tab" data-toggle="tab" href="#ogrencimenu" role="tab">Öğrenci Menü</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" id="tavayemekleri-tab" data-toggle="tab" href="#tavayemekleri" role="tab">Tava Yemekleri</a>
                     </li>
@@ -233,7 +235,41 @@
                     </li>
                 </ul>
             </div>
-            
+            <div class="row">
+                <div class="tab-content col-lg-12" id="myTabContent">
+                     <div class="tab-pane fade" id="ogrencimenu" role="tabpanel" aria-labelledby="ogrencimenu-tab">
+                        <h3>Öğrenci Menüleri</h3>
+                        <!-- Makarna menüsünü buraya ekleyebilirsiniz -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="img/schnitzel.jpg" alt="Penne Con Pollo">
+                                    <div class="menu_content">
+                                        <h4>Schnitzel Wrap & Patates & Bardak Kola<span>₺90</span></h4>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="img/hamburger-menu.jpg" alt="öğrenci menüsü">
+                                    <div class="menu_content">
+                                        <h4>Tavuk Burger & Patates & Kola<span>₺80</span></h4>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="img/tabak-menu.jpg" alt="öğrenci menüsü">
+                                    <div class="menu_content">
+                                        <h4>Patates & Nugget & Soğan Halkası<span>₺70</span></h4>
+                                        <p><br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Tava Yemekleri Tab -->
                     <div class="tab-pane fade show active" id="tavayemekleri" role="tabpanel" aria-labelledby="tavayemekleri-tab">
                         <h3>Tavuk Yemekleri</h3>
@@ -636,20 +672,18 @@
                                     <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2023/03/nisastasiz-tam-olculu-sutlac-onecikan.jpg" alt="Sütlaç">
                                     <div class="menu_content">
                                         <h4>Sütlaç<span>₺110</span></h4>
+                                       
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
-    </div>
     </section>
 
-<!--
 
-    -->
     <!-- Bootstrap ve JS Bağlantıları -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
