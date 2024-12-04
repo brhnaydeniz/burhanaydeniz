@@ -185,6 +185,44 @@
                 top: 0;
                 left: 0;
             }
+        @media only screen and (max-width: 768px) {
+        /* Single Menu Düzeni */
+        .single_menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .single_menu img {
+            width: 45%; /* Görsel genişliği */
+            height: auto; /* Görsel oranını korur */
+            margin: 0;
+            clip-path: none; /* Mobilde clip-path iptal */
+        }
+
+        .menu_content {
+            width: 55%; /* Metin genişliği */
+            padding-left: 10px; /* Görsel ile metin arasındaki boşluk */
+            text-align: left;
+        }
+
+        .menu_content h4 {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .menu_content h4 span {
+            font-size: 16px;
+        }
+
+        .menu_content p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        }
     </style>
 </head>
 
