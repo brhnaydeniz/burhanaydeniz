@@ -30,200 +30,194 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .page_title {
-            padding: 30px 0px;
-        }
+       /* Sayfa Başlığı */
+.page_title {
+    padding: 30px 0;
+}
 
-            .page_title h1 {
-                color: #c0392b;
-                font-weight: 700;
-                line-height: 2;
-                margin-bottom: 0;
-                position: relative;
-                text-transform: capitalize;
-            }
+.page_title h1 {
+    color: #c0392b;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: capitalize;
+}
 
-                .page_title h1::before {
-                    background: #c0392b;
-                    width: 70px;
-                    height: 2px;
-                    position: absolute;
-                    content: '';
-                    top: 90%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
+.page_title h1::before,
+.page_title h1::after {
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-                .page_title h1::after {
-                    position: absolute;
-                    content: '';
-                    background: #fbc531;
-                    width: 30px;
-                    height: 2px;
-                    top: 90%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-        /*Menu starts*/
-        .menu_tab {
-            margin: 0 auto;
-            justify-content: center;
-        }
+.page_title h1::before {
+    background: #c0392b;
+    width: 70px;
+    height: 2px;
+}
 
-        .nav-item {
-            display: inline-block;
-            text-align: center;
-        }
+.page_title h1::after {
+    background: #fbc531;
+    width: 30px;
+    height: 2px;
+}
 
-        .nav-tabs .nav-link {
-            transition: .3s;
-        }
+/* Menü Sekme ve Butonlar */
+.menu_tab {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 
-            .nav-tabs .nav-link.active {
-                background: #c0392b;
-                color: #fff;
-                font-weight: 700;
-                border: 1px solid #c0392b;
-                text-transform: capitalize;
-            }
+.nav-item {
+    display: inline-block;
+    text-align: center;
+}
 
-        .nav-link {
-            color: #000;
-        }
+.nav-tabs .nav-link {
+    transition: 0.3s;
+    color: #000;
+}
 
-        .nav-tabs .nav-link:hover {
-            background: #c0392b;
-            color: #fff;
-            border: 1px solid #c0392b;
-        }
+.nav-tabs .nav-link.active {
+    background: #c0392b;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #c0392b;
+    text-transform: capitalize;
+}
 
-        .single_menu {
-            position: relative;
-            margin-bottom: 75px;
-            transition: .3s;
-        }
+.nav-tabs .nav-link:hover {
+    background: #c0392b;
+    color: #fff;
+    border: 1px solid #c0392b;
+}
 
-            .single_menu:hover img {
-                -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-                clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
-            }
+/* Tekil Menü Elemanları */
+.single_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 75px;
+    position: relative;
+    transition: 0.3s;
+}
 
-            .single_menu img {
-                width: 33%;
-                position: absolute;
-                height: 140px;
-                -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-                transition: .3s;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-            }
+.single_menu img {
+    width: 140px;
+    height: auto;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
 
-        .menu_content {
-            padding-left: 230px;
-        }
+.single_menu:hover img {
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+}
 
-            .menu_content h4 {
-                font-size: 25px;
-                font-weight: 300;
-                border-bottom: 1px dashed #c0392b;
-                line-height: 2;
-                text-transform: capitalize;
-            }
+.menu_content {
+    flex: 1;
+    text-align: left;
+}
 
-                .menu_content h4 span {
-                    font-size: 25px;
-                    font-weight: 800;
-                    float: right;
-                    font-style: italic;
-                    color: #c0392b;
-                }
+.menu_content h4 {
+    font-size: 25px;
+    font-weight: 300;
+    border-bottom: 1px dashed #c0392b;
+    line-height: 2;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
 
-            .menu_content p {
-                font-weight: 200;
-                font-size: 16px;
-                letter-spacing: 1px;
-            }
+.menu_content h4 span {
+    font-size: 25px;
+    font-weight: 800;
+    float: right;
+    font-style: italic;
+    color: #c0392b;
+}
 
-        .menu_btn.btn.btn-danger {
-            margin: 0 auto;
-            display: block;
-            width: 140px;
-        }
-        /*Menu ends*/
-        .menu_btn.btn.btn-danger {
-            margin: 0 auto;
-            display: block;
-            width: 140px;
-        }
+.menu_content p {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
 
-        .btn.btn-danger {
-            background: #c0392b;
-            border: 1px solid #c0392b;
-            transition: .3s;
-            position: relative;
-            z-index: 1;
-            text-transform: capitalize;
-            font-weight: 700;
-            overflow: hidden;
-            padding: 15px 25px;
-        }
+/* Menü Butonu */
+.menu_btn.btn.btn-danger {
+    margin: 0 auto;
+    display: block;
+    width: 140px;
+    background: #c0392b;
+    border: 1px solid #c0392b;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 15px 25px;
+}
 
-            .btn.btn-danger::before {
-                position: absolute;
-                content: '';
-                background: #e74c3c;
-                width: 100%;
-                height: 100%;
-                left: -100%;
-                top: 100%;
-                transition: .3s;
-                z-index: -1;
-            }
+.menu_btn.btn.btn-danger::before {
+    position: absolute;
+    content: '';
+    background: #e74c3c;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 100%;
+    transition: 0.3s;
+    z-index: -1;
+}
 
-            .btn.btn-danger:hover:before {
-                top: 0;
-                left: 0;
-            }
-           @media only screen and (max-width: 768px) {
-        /* Single Menu Düzeni */
-        .single_menu {
-            display: flex;
-            align-items: center; /* Dikey ortalama */
-            justify-content: flex-start; /* Yan yana hizalama */
-            flex-wrap: nowrap; /* Satır kırılmasını engeller */
-            gap: 10px; /* Görsel ve metin arasındaki boşluk */
-            margin-bottom: 20px; /* Menülerin arasındaki boşluk */
-        }
+.menu_btn.btn.btn-danger:hover::before {
+    top: 0;
+    left: 0;
+}
 
-        .single_menu img {
-            width: 40%; /* Görsel genişliği */
-            height: auto; /* Oran koruma */
-            margin: 0;
-            clip-path: none; /* Clip-path'i devre dışı bırak */
-        }
-
-        .menu_content {
-            width: 60%; /* Metin genişliği */
-            padding: 0;
-            text-align: left; /* Metni sola hizala */
-        }
-
-        .menu_content h4 {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-
-        .menu_content h4 span {
-            font-size: 16px;
-        }
-
-        .menu_content p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
+/* Mobil Düzenlemeler */
+@media only screen and (max-width: 768px) {
+    .single_menu {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
     }
+
+    .single_menu img {
+        width: 45%;
+        height: auto;
+        clip-path: none;
+        margin: 0;
+    }
+
+    .menu_content {
+        width: 55%;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .menu_content h4 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .menu_content h4 span {
+        font-size: 16px;
+    }
+
+    .menu_content p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+
     </style>
 </head>
 
