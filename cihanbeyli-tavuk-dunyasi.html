@@ -185,27 +185,28 @@
                 top: 0;
                 left: 0;
             }
-        @media only screen and (max-width: 768px) {
+           @media only screen and (max-width: 768px) {
         /* Single Menu Düzeni */
         .single_menu {
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
+            align-items: center; /* Dikey ortalama */
+            justify-content: flex-start; /* Yan yana hizalama */
+            flex-wrap: nowrap; /* Satır kırılmasını engeller */
+            gap: 10px; /* Görsel ve metin arasındaki boşluk */
+            margin-bottom: 20px; /* Menülerin arasındaki boşluk */
         }
 
         .single_menu img {
-            width: 45%; /* Görsel genişliği */
-            height: auto; /* Görsel oranını korur */
+            width: 40%; /* Görsel genişliği */
+            height: auto; /* Oran koruma */
             margin: 0;
-            clip-path: none; /* Mobilde clip-path iptal */
+            clip-path: none; /* Clip-path'i devre dışı bırak */
         }
 
         .menu_content {
-            width: 55%; /* Metin genişliği */
-            padding-left: 10px; /* Görsel ile metin arasındaki boşluk */
-            text-align: left;
+            width: 60%; /* Metin genişliği */
+            padding: 0;
+            text-align: left; /* Metni sola hizala */
         }
 
         .menu_content h4 {
@@ -222,7 +223,7 @@
             font-size: 14px;
             margin: 5px 0;
         }
-        }
+    }
     </style>
 </head>
 
